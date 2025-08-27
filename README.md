@@ -23,8 +23,8 @@ The project also includes tracking of the learning process and visualization of 
 
 ## SLP AND
 
-![AND +2 Threshold](images/and_plus2_thresh.png)
-![AND -2 Threshold](images/and_minus2_thresh.png)
+![AND +2 Threshold](src/main/resources/io/github/rajveer/logicgatesperceptron/andPositive2Thresh.png)
+![AND -2 Threshold](src/main/resources/io/github/rajveer/logicgatesperceptron/andNegative2Thresh.png)
 
 - A **single-layer perceptron** for the AND gate.  
 - **Learning rate:** Can be increased to hasten learning but should be chosen cautiously; too high may prevent fine-tuning.  
@@ -36,8 +36,8 @@ The project also includes tracking of the learning process and visualization of 
 
 ## SLP Linear
 
-![Linear Unfinished](images/linear_unfinished.png)
-![Linear Finished](images/linear_finished.png)
+![Linear Unfinished](src/main/resources/io/github/rajveer/logicgatesperceptron/linearUnfinishedTrainSLP.png)
+![Linear Finished](src/main/resources/io/github/rajveer/logicgatesperceptron/linearFinishedTrainSLP.png)
 
 - For **non-classification / regression problems**.  
 - **Regression function used for testing:** `y = 2x + 1`  
@@ -52,7 +52,7 @@ The project also includes tracking of the learning process and visualization of 
 
 ## XOR Model
 
-![XOR Model](images/xor_model.png)
+![XOR Model](src/main/resources/io/github/rajveer/logicgatesperceptron/xorModel.png)
 
 - **Multi-layer perceptron (MLP)** implemented to solve XOR, which cannot be solved by a single-layer perceptron.  
 - Tracks **Mean Squared Error (MSE)** loss and weight/bias changes during training.
@@ -71,7 +71,7 @@ Epoch 1000, MSE Loss: 0.252861
 | [1, 0]    | 0.5043    | 1.0    |
 | [1, 1]    | 0.5232    | 0.0    |
 
-![XOR MLP](images/xor_mlp.png)
+![XOR MLP](src/main/resources/io/github/rajveer/logicgatesperceptron/xorMLP.png)
 
 **Observations:**  
 
