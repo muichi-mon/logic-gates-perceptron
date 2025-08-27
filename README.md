@@ -96,3 +96,40 @@ Epoch 1000, MSE Loss: 0.252861
 
 ```bash
 git clone https://github.com/your-username/logic-gates-perceptron.git
+```
+
+2. FXPlot plotting utility:
+
+This project uses FXPlot
+
+Local Installation:
+
+Since FXPlot is not yet published to Maven Central, you can use JitPack to include FXPlot as a dependency. 
+
+Add this repository to your pom.xml:
+```xml
+<repositories>
+  <repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+  </repository>
+</repositories>
+```
+
+Then add the dependency:
+```xml
+<dependencies>
+  <dependency>
+    <groupId>com.github.muichi-mon</groupId>
+    <artifactId>fxplot</artifactId>
+    <version>master-SNAPSHOT</version>
+  </dependency>
+</dependencies>
+```
+
+If using Java modules, add the following line to your module-info.java:
+```xml
+module your.module.name {
+    requires io.github.rajveer.fxplot;
+}
+```
