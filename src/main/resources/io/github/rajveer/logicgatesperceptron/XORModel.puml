@@ -1,0 +1,32 @@
+@startuml XOR_MLP_Horizontal
+
+skinparam rectangle {
+  BackgroundColor White
+  BorderColor Black
+}
+
+left to right direction
+title XOR MLP Model
+
+' Input Layer
+rectangle "x[0]" as X0
+rectangle "x[1]" as X1
+
+' Hidden Layer
+rectangle "h[0]\n(b1[0])" as H0
+rectangle "h[1]\n(b1[1])" as H1
+
+' Output Layer
+rectangle "y\n(b2)" as Y
+
+' Connections Input -> Hidden
+X0 -[#blue]-> H0 : W1[0][0]
+X0 -[#green]-> H1 : W1[0][1]
+X1 -[#red]-> H0 : W1[1][0]
+X1 -[#orange]-> H1 : W1[1][1]
+
+' Connections Hidden -> Output
+H0 -[#purple]-> Y : W2[0]
+H1 -[#brown]-> Y : W2[1]
+
+@enduml
