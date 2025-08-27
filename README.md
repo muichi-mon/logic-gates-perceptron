@@ -16,19 +16,22 @@ The project also includes tracking of the learning process and visualization of 
 - [SLP Linear](#slp-linear)
 - [XOR Model](#xor-model)
 - [Usage](#usage)
-- [Observations](#observations)
-- [License](#license)
 
 ---
 
 ## SLP AND
 
 ![AND +2 Threshold](src/main/resources/io/github/rajveer/logicgatesperceptron/andPositive2Thresh.png)
+
+> **Note:** For the **+2 threshold**, the perceptron bias **increases** to help reach the activation threshold for producing output `1`.
+
 ![AND -2 Threshold](src/main/resources/io/github/rajveer/logicgatesperceptron/andNegative2Thresh.png)
+
+> **Note:** For the **-2 threshold**, the perceptron bias **decreases** to adjust the weighted sum so that the neuron can still activate correctly.
 
 - A **single-layer perceptron** for the AND gate.  
 - **Learning rate:** Can be increased to hasten learning but should be chosen cautiously; too high may prevent fine-tuning.  
-- **Activation function:** Step function (0, 1) for classification.  
+- **Activation function:** Step function ```return weightedSum >= threshold ? 1 : 0 ``` for classification.  
 
 > Key idea: For classification problems, the perceptron outputs discrete values using a step function.
 
@@ -37,15 +40,21 @@ The project also includes tracking of the learning process and visualization of 
 ## SLP Linear
 
 ![Linear Unfinished](src/main/resources/io/github/rajveer/logicgatesperceptron/linearUnfinishedTrainSLP.png)
+
+> **Note:** This is an **unfinished training** of the SLP for the regression function `y = 2x + 1`.  
+> The network has a **small learning rate** and **insufficient epochs**, so the weights and bias have not yet reached their optimum values.
+
 ![Linear Finished](src/main/resources/io/github/rajveer/logicgatesperceptron/linearFinishedTrainSLP.png)
+
+> **Note:** This shows the **finished training** of the SLP for `y = 2x + 1`.  
+> The network has now **converged** with appropriate weights and bias, closely approximating the target linear mapping.
 
 - For **non-classification / regression problems**.  
 - **Regression function used for testing:** `y = 2x + 1`  
-- **Activation function:** Identity (linear), not a step function.  
+- **Activation function:** Identity (linear), no step function required as it's a non-classification problem.  
 
 > Notes:
 > - Step functions are avoided because the model must approximate a **continuous mapping** (`y = 2x + 1`).  
-> - Regression problems use **linear output** (output = input) so that the network can learn continuous values.  
 > - Using a nonlinear step function in regression would throw away useful information.
 
 ---
