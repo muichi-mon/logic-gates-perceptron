@@ -14,7 +14,7 @@ The project also includes tracking of the learning process and visualization of 
 
 - [SLP AND](#slp-and)
 - [SLP Linear](#slp-linear)
-- [XOR Model](#xor-model)
+- [MLP XOR Model](#mlp-xor-model)
 - [Usage](#usage)
 
 ---
@@ -59,7 +59,7 @@ The project also includes tracking of the learning process and visualization of 
 
 ---
 
-## XOR Model
+## MLP XOR Model
 
 ![XOR Model](src/main/resources/io/github/rajveer/logicgatesperceptron/xorModel.png)
 
